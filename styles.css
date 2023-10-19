@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* GLOBALS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree';
+}
+
+h1 {
+    font-size: calc(100% * 3);
+}
+
+h2{
+    font-size: calc(100% * 2.5);
+}
+
+h3 {
+    font-size: calc(100% * 1.7);
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+main {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+
+}
+
+/* HERO SECTION */
+
+.intro {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {
+    margin-bottom: .5rem;
+}
+
+.intro p {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+/* CALL TO ACTION BUTTONS */
+
+.cta-btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-btns .cta {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cta-btns .cta:active {
+    scale: .9;
+}
+
+.cta-btns .cta.cta1 {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.cta-btns .cta.cta1:hover {
+    box-shadow: 0 0 5px hsl(171, 66%, 44%);
+    opacity: .9;
+}
+
+.cta-btns .cta.cta2 {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.cta-btns .cta.cta2:hover {
+    box-shadow: 0 0 5px hsl(233, 100%, 69%);
+    opacity: .9;
+}
+
+/* SECOND SECTION */
+
+.track {
+    margin-bottom: 5rem;
+}
+
+.track h2, .track > p {
+    text-align: center;
+}
+
+.track > p {
+    width: 50%;
+    margin: auto auto 3rem auto;
+}
+
+.track .advantages {
+    display: flex;
+    width: 100%;
+}
+
+.track .advantages img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.track .advantages .option {
+    padding: 0 7rem 3rem 7rem;
+}
+
+.track .advantages .option .opt {
+    margin-top: 3rem;
+}
+
+/* THRID SECTION */
+
+.access {
+    width: 70%;
+    margin: auto auto 3rem auto;
+    text-align: center;
+}
+
+.access p {
+    width: 70%;
+    margin: auto auto 3rem auto;
+}
+
+.access img {
+    width: 100%;
+}
+
+/* FOURTH SECTION */
+
+.workflow {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.workflow .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+}
+
+.workflow p {
+    margin-bottom: 3rem;
+}
+
+.workflow .details .work {
+    width: 70rem;
+}
+
+/* PARTNER COMPANIES SECTION */
+
+.companies {
+    margin: 7rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.companies img {
+    width: 7rem;
+}
+
+/* FIFTH SECTION */
+
+.devices {
+    width: 80%;
+    margin: auto auto 7rem auto;
+    text-align: center;
+}
+
+.devices p {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: hsl(210, 10%, 92%);
+    margin: 0;
+    position: absolute;
+    bottom: 1;
+}
+
+footer .sub-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+footer .sub-section .logo {
+    width: 5rem;
+}
+
+footer .sub-section .additional {
+    display: flex;
+    gap: 20%;
+    width: 45%;
+}
+
+footer .sub-section .additional a {
+    display: block;
+    margin-bottom: 1rem;
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+    font-size: calc(100% * 1.1);
+}
+
+footer .sub-section .additional a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+footer .sub-section .socials a {
+    margin: auto .5rem;
+}
+
+footer .sub-section .socials a svg path:hover {
+    fill: hsl(171, 66%, 44%);
+}
+
+/* ATTRIBUTION */
+
+footer .attribution {
+    text-align: center;
+    font-size: .8rem;
+    color: unset !important;
+}
+
+footer .attribution a {
+    text-decoration: none;
+    color: hsl(171, 66%, 44%);
+}
+
+footer .attribution a:hover {
+    color: hsl(233, 100%, 69%);
+}
+
+footer .attribution span {
+    display: block;
+    font-weight: 700;
+    margin-top: .5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 760px) {
+    .track .advantages {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .track {
+        padding: 0 1.5rem;
+    }
+
+    .track .advantages img {
+        width: 100%;
+    }
+
+    .track .advantages .option {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 650px)  {
+    main {
+        background-image: url(./images/bg-header-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .intro {
+        padding: 6rem 1.5rem !important;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .cta-btns {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .cta {
+        width: 100% !important;
+    }
+
+    .track > p {
+        width: 100% !important;
+    }
+
+    .access {
+        width: 100%;
+        padding: 6rem 1.5rem !important;
+    }
+
+    .access p {
+        width: 100% !important;
+    }
+
+    .workflow {
+        width: 100%;
+        padding: 6rem 1.5rem !important;
+    }
+
+    .workflow .details {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .workflow .details .work {
+        width: 100% !important;
+    }
+
+    .companies {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .companies img {
+        width: 40% !important;
+    }
+
+    .devices p {
+        width: 100% !important;
+    }
+
+    footer .sub-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    footer .sub-section .additional {
+        flex-direction: column;
+        width: auto !important;
+        text-align: center;
+    }
+}
